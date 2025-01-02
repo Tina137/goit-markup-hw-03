@@ -50,8 +50,8 @@ nav {
   gap: 40px;
 }
 .nav-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
+  display: block;
 }
 span {
   color: #2e2f42;
