@@ -49,9 +49,9 @@ nav {
   display: flex;
   gap: 40px;
 }
-
 .nav-link {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 span {
   color: #2e2f42;
