@@ -12,10 +12,7 @@ ul {
 }
 .container {
   max-width: 1158px;
-  /* padding-left:  
-padding-right:  
-margin-left:  
-margin-right:   */
+  padding: 0 15px;
   margin: auto;
 }
 .section {
@@ -23,9 +20,10 @@ margin-right:   */
 }
 
 /* !!!!!!!!!!!!!!!!!!HEADER!!!!!!!!!!!!!!!!!!! */
-header {
-  padding: 24px 0;
+.header {
+  border-bottom: 1px solid #e7e9fc;
 }
+
 .header-container {
   display: flex;
   gap: 330px;
@@ -40,14 +38,19 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-
+.header-logo {
+  margin-right: 76px;
+}
 nav {
   display: flex;
-  gap: 77px;
+  align-items: center;
 }
 .nav-list {
   display: flex;
   gap: 40px;
+}
+.nav-list > li {
+  padding: 24px 0;
 }
 span {
   color: #2e2f42;
@@ -90,7 +93,7 @@ span {
 .hero {
   background-color: #2e2f42;
   text-align: center;
-  padding: 188px;
+  padding: 188px 0;
 }
 .hero-title {
   max-width: 496px;
@@ -114,6 +117,9 @@ span {
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
+  display: block;
+  min-width: 169px;
+  margin: auto;
 }
 .hero-button:hover {
   background-color: #404bbf;
@@ -123,11 +129,14 @@ span {
 }
 /* !!!!!!!!!!!!!!!!!!SECTIONS!!!!!!!!!!!!!!!!!!! */
 .first-section_name {
-  display: none;
+  visibility: hidden;
 }
 .first-section_list {
   display: flex;
   gap: 24px;
+}
+.first-section_list > li {
+  width: calc((100% - 72px) / 4);
 }
 .second-section {
   background-color: #f4f4fd;
@@ -144,23 +153,25 @@ ul > li > img {
 }
 .card {
   background-color: #ffffff;
-  max-width: 264px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .card-content {
-  padding: 32px 65px;
+  padding: 32px 0;
 }
 .third-section_list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 .project {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  max-width: 360px;
+  width: calc((100% - 48px) / 3);
 }
 .project-content {
-  padding: 22px 16px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 .section-name {
   color: #2e2f42;
@@ -200,6 +211,9 @@ footer span {
   line-height: 24px;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  margin-top: 16px;
   max-width: 264px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
